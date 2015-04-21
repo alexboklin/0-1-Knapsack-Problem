@@ -48,7 +48,7 @@ def main():
     itemsToTake = set()
     while numOfItems >= 0:
         if keep[numOfItems - 1][capacity - 1] == 1:
-            itemsToTake.add( ( values[numOfItems - 1],  weights[numOfItems - 1] ))
+            itemsToTake.add( (values[numOfItems - 1], weights[numOfItems - 1]) )
             capacity -= weights[numOfItems - 1]
         numOfItems -= 1
 

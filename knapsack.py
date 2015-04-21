@@ -50,9 +50,7 @@ def main():
         if keep[numOfItems - 1][capacity - 1] == 1:
             itemsToTake.add( ( values[numOfItems - 1],  weights[numOfItems - 1] ))
             capacity -= weights[numOfItems - 1]
-            numOfItems -= 1
-        else:
-            numOfItems -= 1
+        numOfItems -= 1
 
     totalWeight = sum([item[1] for item in itemsToTake]) 
 

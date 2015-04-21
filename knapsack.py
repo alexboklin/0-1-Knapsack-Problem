@@ -1,3 +1,5 @@
+# Python 3.4.2
+
 import time
 import argparse
 import sys
@@ -52,9 +54,7 @@ def main():
         else:
             numOfItems -= 1
 
-    totalWeight = 0
-    for item in itemsToTake:
-        totalWeight += item[1]
+    totalWeight = sum([item[1] for item in itemsToTake]) 
 
     if args.v:
         print("Total value of the items taken: {}".format(totalValue))
